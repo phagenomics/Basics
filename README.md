@@ -21,3 +21,14 @@ Takes a multifasta file and a number as a second integer where the number is the
 
 Takes a list and a multifasta file. It will return the number a smaller multifasta file, if the header of any of them is included in the list.
 
+[breakInd.pl](SCRIPTS/breakInd.pl)
+
+Takes a multifasta file and generates individual fasta files from each fasta entry, Careful!! It will generate millions of files.
+
+[parse_long.pl](SCRIPTS/parse_long.pl)
+
+It takes as imput a blast output, long format and generates a tabultated file with the best hit annotation foreach entry, easy fast way annotation to generate top-blast hit annotations from NCBI files. 
+
+[BlastTopHit.pl](SCRIPTS/BastTopHits.pl)
+
+IT takes a blast tabular output (-outfmt 6) and returns the first entry (presumably the best hit) for each individual query, useful if wanna reduce huge blast files to only the top hit for each query.
